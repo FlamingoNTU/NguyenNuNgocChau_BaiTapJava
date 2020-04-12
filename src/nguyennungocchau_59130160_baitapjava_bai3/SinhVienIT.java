@@ -12,16 +12,16 @@ package nguyennungocchau_59130160_baitapjava_bai3;
 public class SinhVienIT extends SinhVienPoly{
     private double diemJava;
     private double diemCss;
-    private double Html;
+    private double diemHtml;
 
     public SinhVienIT() {
     }
 
-    public SinhVienIT(double diemJava, double diemCss, double Html, String hoTen, String nganh) {
+    public SinhVienIT(double diemJava, double diemCss, double diemHtml, String hoTen, String nganh) {
         super(hoTen, nganh);
         this.diemJava = diemJava;
         this.diemCss = diemCss;
-        this.Html = Html;
+        this.diemHtml = diemHtml;
     }
 
     public double getDiemJava() {
@@ -40,16 +40,16 @@ public class SinhVienIT extends SinhVienPoly{
         this.diemCss = diemCss;
     }
 
-    public double getHtml() {
-        return Html;
+    public double getDiemHtml() {
+        return diemHtml;
     }
 
-    public void setHtml(double Html) {
-        this.Html = Html;
+    public void setDiemHtml(double diemHtml) {
+        this.diemHtml = diemHtml;
     }
     
     @Override
-    public void getDiem(){
-        
+    public double getDiem() {
+        return (2*diemJava + diemHtml + diemCss)/4;
     }
 }

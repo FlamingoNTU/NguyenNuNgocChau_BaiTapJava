@@ -11,9 +11,23 @@ package nguyennungocchau_59130160_baitapjava_bai3;
  */
 public class Main  {
     public static void main(String[] args) {
-        SinhVienIT IT = new SinhVienIT(8.5, 9.0, 7.5, "Nguyen Nu Ngoc Chau", "IT");
+        SinhVienPoly svPoly = new SinhVienPoly("Le Van Binh", "Dien Tu") {
+            @Override
+            public double getDiem() {
+                return 0;
+            }
+        };
         
-        System.out.println("Thong tin cua sinh vien IT: ");
+        SinhVienPoly svIT = new SinhVienIT(6, 8, 7.5, "Nguyen Mai", "Cong nghe thong tin");                                             
+        SinhVienPoly svBiz = new SinhVienBiz(7, 7, "Le Thi Ngoc", "Ke Toan");
         
+        svIT.xuat();
+        System.out.println("Diem: " + svIT.getDiem() + "\nHoc luc: " + svIT.getHocLuc());
+        System.out.println("--------------------------------------------------");
+        svBiz.xuat();
+        System.out.println("Diem: " + svBiz.getDiem() + "\nHoc luc: " + svBiz.getHocLuc());
+        System.out.println("--------------------------------------------------");
+        svPoly.xuat();
+        System.out.println("Diem: + " + svPoly.getDiem() + "\nHoc luc: " + svPoly.getHocLuc());                                    
     }
 }

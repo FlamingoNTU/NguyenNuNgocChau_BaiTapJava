@@ -39,7 +39,7 @@ public class SinhVienBiz extends SinhVienPoly{
     }
     
     @Override
-    public void getDiem(){
-        
+    public double getDiem(){
+        return (2*diemMarketing + diemSales)/3;
     }
 }
