@@ -11,13 +11,14 @@ package nguyennungocchau_59130160_baitapjava_bai1;
  */
 public class Main {
     public static void main(String[] args) {
-        NhanVien NV1 = new NhanVien("Chau", 21, " Nha Trang", 1000, 5);
-        NhanVien NV2 = new NhanVien("Xuan", 20, " Phu Yen", 2000, 8);
+        NhanVien NV1 = new NhanVien("Chau", 21, " Nha Trang", 100000, 100);
+        NhanVien NV2 = new NhanVien("Xuan", 20, " Phu Yen", 200000, 70);
         
 
-        System.out.println("Thong tin nhan vien thu nhat: ");
+        System.out.println("THONG TIN NHAN VIEN THU 1: ");
         NV1.getThongTin();
-        System.out.println("Thong tin nhan vien thu hai: ");
+        System.out.println("---------------------------");
+        System.out.println("THONG TIN NHAN VIEN THU 2: ");
         NV2.getThongTin();
     }
 }

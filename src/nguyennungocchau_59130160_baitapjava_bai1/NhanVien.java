@@ -68,9 +68,9 @@ public class NhanVien {
     }
 
     public void getThongTin(){
-        System.out.println("Ten nhan vien: " + ten);
-        System.out.println("Tuoi nhan vien: " + tuoi);
-        System.out.println("Dia chi nhan vien: " + diaChi);
+        System.out.println("Ten: " + ten);
+        System.out.println("Tuoi: " + tuoi);
+        System.out.println("Dia chi: " + diaChi);
         System.out.println("Tien luong: " + tienLuong);
         System.out.println("Tong so gio lam: " + tongGioLam);
         System.out.println("Tien thuong: " + tinhThuong());
@@ -82,4 +82,6 @@ public class NhanVien {
             return (int) (tienLuong*0.1);
         return (int) (tienLuong*0.2);
     }
+
+   
 }
