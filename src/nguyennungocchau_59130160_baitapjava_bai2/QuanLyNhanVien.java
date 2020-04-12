@@ -5,6 +5,7 @@
  */
 package nguyennungocchau_59130160_baitapjava_bai2;
 
+import java.util.ArrayList;
 import nguyennungocchau_59130160_baitapjava_bai1.NhanVien;
 
 /**
@@ -12,22 +13,20 @@ import nguyennungocchau_59130160_baitapjava_bai1.NhanVien;
  * @author Admin
  */
 public class QuanLyNhanVien implements IQuanLy{
-    NhanVien[] NV = new NhanVien[50];
-    int k = 0;
+    ArrayList<NhanVien> NV = new ArrayList<>();
     
     @Override
     public void them(NhanVien nv) {
-        NV[k] = new NhanVien();
-        NV[k] = nv;
-        k++;
+        this.NV.add(nv);
     }
 
     @Override
     public void inDS() {
-       for(int i = 0; i < k; i++)
+       for(int i = 0; i < NV.size(); i++)
        {
-           System.out.println("Nhan vien thu: " + i);
-           NV[i].getThongTin();
+           System.out.println("Thong tin nhan vien thu: " + (i+1));
+           NV.get(i).getThongTin();
+           System.out.println("-------------------------------------------------");
        }
     }
     
