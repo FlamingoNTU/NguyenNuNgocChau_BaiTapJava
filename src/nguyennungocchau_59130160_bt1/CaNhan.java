@@ -57,5 +57,11 @@ public abstract class CaNhan {
         this.sdt = sdt;
     }
 
-    
+    public String HienThiTT(){
+        System.out.println("Ten: " + hoTen);
+        System.out.println("Tuoi: " + tuoi);
+        System.out.println("Dia chi: " + diaChi);
+        System.out.println("So dien thoai: " + sdt);
+        return "";
+    }      
 }

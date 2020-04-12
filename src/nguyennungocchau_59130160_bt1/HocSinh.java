@@ -39,45 +39,10 @@ public class HocSinh extends CaNhan{
     }
 
     @Override
-    public void setSdt(String sdt) {
-        super.setSdt(sdt); //To change body of generated methods, choose Tools | Templates.
+    public String HienThiTT(){
+        super.HienThiTT();
+        System.out.println("Lop: " + lop);
+        System.out.println("Nang khieu: " + nangKhieu);                
+        return "";
     }
-
-    @Override
-    public String getSdt() {
-        return super.getSdt(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setDiaChi(String diaChi) {
-        super.setDiaChi(diaChi); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getDiaChi() {
-        return super.getDiaChi(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setTuoi(int tuoi) {
-        super.setTuoi(tuoi); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int getTuoi() {
-        return super.getTuoi(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setHoTen(String hoTen) {
-        super.setHoTen(hoTen); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getHoTen() {
-        return super.getHoTen(); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
-    
 }
